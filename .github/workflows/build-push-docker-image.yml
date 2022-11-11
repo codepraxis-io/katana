@@ -8,7 +8,7 @@ jobs:
   prep-tags:
     runs-on: ubuntu-latest
     outputs:
-      docker-image-tag: ${{ env.docker-image-tag }}
+      docker-image-tag: ${{ steps.prep.outputs.docker-image-tag }}
     steps:
       - name: Prepare
         id: prep
