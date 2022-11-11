@@ -28,7 +28,7 @@ jobs:
     with:
       docker_context_dir: .
       docker_image_name: katana
-      docker_image_tag: ${{ needs.prep-tags.outputs.docker-image-tag }}"
+      docker_image_tag: ${{ needs.prep-tags.outputs.docker-image-tag }}
       verify_base_image_signature: 'false'
     secrets:
       destination_registry_username: ${{ secrets.GH_PACKAGES_USERNAME }} 
