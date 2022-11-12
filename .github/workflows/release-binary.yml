@@ -1,9 +1,9 @@
 name: 🎉 Release Binary
 
 on:
-  create:
-    tags:
-      - v*
+  # create:
+  #   tags:
+  #     - v*
   workflow_dispatch:
 
 jobs:
